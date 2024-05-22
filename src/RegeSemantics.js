@@ -42,7 +42,7 @@ export class RegeDependentSemantics {
     }
     actions(input, configuration) {
         if (configuration.accept(new Inhabitation(), null)) {
-            return this.derivator;
+            return [this.derivator];
         }
         return [];
     }
