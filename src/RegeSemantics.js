@@ -1,3 +1,4 @@
+import { Nullability } from "./RegeBrzozowski";
 
 export class Inhabitation extends Visitor {
     visitEmpty(expression, input) {
@@ -47,4 +48,8 @@ export class RegeDependentSemantics {
     execute(action, input, configuration) {
         return [configuration.accept(action, input)];
     }
+}
+
+export function isAccepting(configuration) {
+    return configuration.accept(new Nullability(), null);
 }

@@ -6,7 +6,7 @@ The token evaluation is delegated to an external evaluator, which is passed as a
 
 import { Visitor, Empty, Epsilon, Token, Concatenation, Union, KleeneStar } from "./RegeSyntaxModel";
 
-class Nullability extends Visitor {
+export class Nullability extends Visitor {
     visitEmpty(expression, input) {
         return false;
     }
