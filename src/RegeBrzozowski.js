@@ -4,7 +4,7 @@ The semantics is heterogeneous, the token are expressions that evaluate to a boo
 The token evaluation is delegated to an external evaluator, which is passed as a parameter to the constructor.
 */
 
-import { Visitor, Empty, Epsilon, Token, Concatenation, Union, KleeneStar } from "./RegeSyntaxModel";
+import { Visitor, Empty, Epsilon, Token, Concatenation, Union, KleeneStar } from "./RegeSyntaxModel.js";
 
 export class Nullability extends Visitor {
     visitEmpty(expression, input) {

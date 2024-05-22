@@ -1,4 +1,4 @@
-import { Nullability } from "./RegeBrzozowski";
+import { Nullability } from "./RegeBrzozowski.js";
 
 export class Inhabitation extends Visitor {
     visitEmpty(expression, input) {
