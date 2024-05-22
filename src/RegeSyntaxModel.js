@@ -2,6 +2,9 @@ export class Expression {
     accept(visitor, input) {
         return visitor.visitExpression(this, input);
     }
+    async hashCode() {
+        return 1;
+    }
     equals(other) {
         return this === other;
     }
