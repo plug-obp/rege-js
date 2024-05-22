@@ -1,0 +1,22 @@
+{
+  "name": "rege-js",
+  "version": "1.0.0",
+  "description": "Regular Expression Language in JavaScript",
+  "main": "index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Ciprian TEODOROV",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "hash-wasm": "^4.11.0"
+  }
+}
