@@ -1,3 +1,4 @@
+import { Visitor } from "./RegeSyntaxModel.js";
 import { Nullability } from "./RegeBrzozowski.js";
 
 export class Inhabitation extends Visitor {
