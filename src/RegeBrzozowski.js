@@ -67,7 +67,7 @@ export class Brzozowski extends Visitor {
     visitConcatenation(expression, input) {
         if (this.isNullable(expression.lhs)) {
             return this.derivative(expression.lhs, input).concat(expression.rhs)
-                .union(derivative(expression.rhs, input));
+                .union(this.derivative(expression.rhs, input));
         } else {
             return this.derivative(expression.lhs, input).concat(expression.rhs);
         }
