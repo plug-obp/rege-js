@@ -22,9 +22,14 @@ test('read epsilon', () => {
     expect(readExpression('ϵ')).toStrictEqual(new Epsilon());
 });
 
-test('read token', () => {
+test('read token τ', () => {
     expect(readExpression('τ[a]')).toStrictEqual(new Token('a'));
     expect(readExpression('τ[b]')).toStrictEqual(new Token('b'));
+});
+
+test('read token t', () => {
+    expect(readExpression('t[a]')).toStrictEqual(new Token('a'));
+    expect(readExpression('t[b]')).toStrictEqual(new Token('b'));
 });
 
 test('read token with space', () => {

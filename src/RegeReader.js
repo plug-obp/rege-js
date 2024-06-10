@@ -93,7 +93,7 @@ export class RegeReader {
     }
 
     readToken(input) {
-        if (!input.hasNext() || input.peek() != 'τ') return null;
+        if (!input.hasNext() || (input.peek() != 'τ' && input.peek() != 't')) return null;
         input.next();
         this.eatSpace(input);
         if (input.peek() != '[') return null;
